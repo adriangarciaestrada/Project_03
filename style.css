@@ -1,0 +1,82 @@
+body {
+    background-color: lightgray;
+  }
+
+img { 
+    border: 3px solid white; 
+  } 
+  img:hover { 
+    border: 3px solid yellow; 
+  } 
+
+.navbar{
+    background-color: black;
+}
+
+.navbar-toggler {
+    background-color: lightgray;
+}
+
+.navbar li a{
+    color: yellow;
+    font-size: large;
+}
+
+.navbar-brand{
+    background-color: yellow;
+    border-radius: 20px;
+    color: black;
+    padding: 5px;
+    font-size: x-large;
+    margin-left: 50px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#page {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#movie_img {
+    max-width: 100%;
+    max-height: 100%
+}
+
+.container {
+    background: white;
+    margin-top: 30px;
+    padding: 30px;
+    border: black;
+}
+
+.container h2 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.container h1 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: initial;
+    font-weight: 800;
+    text-align: center;
+}
+
+.container img {
+    display: block;
+    text-align: center;
+}
+
+.input{
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}

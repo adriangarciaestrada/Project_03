@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Movie Reviews</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <link rel="stylesheet" href="./static/css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="https://www.sonypicturesanimation.com/"><img src="https://www.sonypicturesanimation.com/themes/custom/sp_animation/images/spa_logo.svg" id="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.imdb.com/title/tt4633694/">IMDb</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.imdb.com/title/tt4633694/plotsummary#synopsis">Synopsis</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row" id="page">
+            <div class="col-md-12 col-xl-4">
+                <div class="container">
+                    <h2 class="display 4">Spider-Man: Into the Spider-Verse</h2>
+                    <hr class="my-4">
+                    <a href="https://www.sonypictures.com/movies/spidermanintothespiderverse" id="movie_img"><img class="cover_img" src="https://www.sonypictures.com/sites/default/files/styles/max_325x325/public/chameleon/title-movie/DP_4325114_TC_1400x2100_DP_4325115_SPIDERMAN_INTO_THE_SPIDERVERSE_2000x3000_EST_48.jpg?itok=HYaNTIa3" id="movie_img"/></a>
+                </div>
+            </div>
+            <div class="col-md-12 col-xl-8">
+                <div class="container">
+                    <h2 class="display-4">Let us know your opinion on this movie</h2>
+                    <hr class="my-4"> 
+                    <form action="/submit" method="POST">
+                        <textarea name="comments" class="form-control ph" rows="5"></textarea>
+                    
+                    <button type="submit" value="Submit" id="submit">Submit Review</button>
+                </form>           
+                </div>
+                <div class="container" id="result">
+                    <h2 class="display-4">{{result}}</h2>
+                    <p>{{comment}}</p>              
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./static/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,1 @@
+index.getElementById('#result').style.visibility = "hidden";
